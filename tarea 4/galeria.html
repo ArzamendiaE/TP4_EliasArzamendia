@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="galeria-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-message" class="message">
+            <h1>¡Bienvenido a nuestra Galería de Imágenes!</h1>
+        </div>
+        
+        <div id="age-prompt" class="message hidden">
+            <form id="age-form">
+                <input type="number" id="age-input" placeholder="Ingresa tu edad" required min="20" max="99">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        
+        <div id="age-message" class="message hidden"></div>
+        
+        <div class="gallery">
+            <div class="image-container">
+                <img src="imagenes/1.jpg" alt="Imagen 1" class="gallery-image fade-in">
+                <img src="imagenes/1.jpg" alt="Imagen 1 alternativa" class="gallery-image-alt hidden">
+            </div>
+            <div class="image-container">
+                <img src="imagenes/2.jpg" alt="Imagen 2" class="gallery-image slide-in">
+                <img src="imagenes/2.jpg" alt="Imagen 2 alternativa" class="gallery-image-alt hidden">
+            </div>
+            <div class="image-container">
+                <img src="imagenes/3.jpg" alt="Imagen 3" class="gallery-image zoom-in">
+                <img src="imagenes/3.jpg" alt="Imagen 3 alternativa" class="gallery-image-alt hidden">
+            </div>
+            <div class="image-container">
+                <img src="imagenes/4.jpg" alt="Imagen 4" class="gallery-image rotate-in">
+                <img src="imagenes/4.jpg" alt="Imagen 4 alternativa" class="gallery-image-alt hidden">
+            </div>
+            <div class="image-container">
+                <img src="imagenes/5.jpg" alt="Imagen 5" class="gallery-image fade-in">
+                <img src="imagenes/5.jpg" alt="Imagen 5 alternativa" class="gallery-image-alt hidden">
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="index.html" class="nav-button">Inicio</a>
+            <a href="blog.html" class="nav-button">Blog</a>
+            <a href="contacto.html" class="nav-button">Contacto</a>
+        </div>
+    </div>
+    
+    <script src="galeria-script.js"></script>
+</body>
+</html>
